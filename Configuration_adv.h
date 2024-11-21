@@ -1245,7 +1245,7 @@
    *   stepperY.interpolate(0); \
    * }
    */
-  #define TMC_ADV() {  }
+  #define TMC_ADV() { stepperE0.en_spreadCycle(true); }
 
 #endif // TMC2130 || TMC2208
 
